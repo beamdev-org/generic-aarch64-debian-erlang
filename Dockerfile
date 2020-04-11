@@ -1,11 +1,11 @@
-FROM balenalib/generic-aarch64-debian:buster
-
-RUN [ "cross-build-start" ]
+FROM leanersoft/raspberrypi3-32-debian-buildpack-deps:buster
 
 RUN set -ex; \
   apt-get update; \
   apt-get install -y --no-install-recommends \
     erlang
+
+RUN [ "cross-build-start" ]
 
 CMD ["erl"]
 
