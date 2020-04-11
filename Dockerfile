@@ -1,4 +1,4 @@
-FROM balenalib/generic-aarch64-debian:buster
+FROM leanersoft/generic-aarch64-debian-buildpack-deps:buster
 
 RUN [ "cross-build-start" ]
 
